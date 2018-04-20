@@ -1,7 +1,7 @@
 const http = require('http');
 const fs = require('fs');
 const pluginID = 'hello-scope';
-const path = `/var/run/scope/plugins/${pluginID}/${pluginID}.sock`;
+const path = `/hab/svc/${pluginID}/var/${pluginID}.sock`;
 
 let plugins = {
   Plugins: [
